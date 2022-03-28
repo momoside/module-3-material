@@ -1,0 +1,138 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #C5DDEB;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+
+.users__box {
+  height: 500px;
+  display: flex;
+  flex-basis: 70%;
+  border-radius: 10px;
+}
+
+.users__box--left {
+  flex: 0 1 300px;
+  background-color: #eb89b4;
+  color: #ffffff;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.users__title {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 1px double white;
+}
+
+.users__list {
+  height: calc(100% - 44.5px);
+  overflow: scroll;
+}
+
+.users__list > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.users__list > ul > li {
+  padding: 10px;
+}
+
+.users__list > ul > li:hover {
+  background-color: #ffd7e9;
+  cursor: pointer;
+  color: #D17AA1;
+}
+
+.users__list > ul > li:hover .users__status--active {
+  color: green;
+}
+
+.users__status--active {
+  color: #b7eca2;
+}
+
+.users__status--inactive {
+  color: #eec2e4;
+}
+
+.users__box--right {
+  flex: 1 1;
+  background-color: #F2F5F8;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+}
+
+.users__empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  color: #D17AA1;
+}
+
+.users__profile {
+  padding: 20px;
+  border-bottom: 1px solid #AB6484;
+  display: flex;
+}
+
+.users__avatar {
+  background-color: #AB6484;
+  border: 3px solid #FFF;
+  border-radius: 18px;
+  box-shadow: 0 0 2px #888;
+  height: 30px;
+  width: 30px;
+}
+
+.users__info{
+  margin-left: 10px;
+}
+
+.users__name {
+  font-weight: bold;
+  color: #AB6484;
+}
+
+.users__form {
+  padding: 20px;
+}
+
+.users__form label {
+  color: #D17AA1;
+  display: inline-block;
+  padding: 10px 0;
+}
+
+.users__form > input:not([type="radio"]) {
+  font-size: 14px;
+  padding: 10px;
+  border: 1px solid #EB89B5;
+  border-radius: 3px 0 0 3px;
+  color: #AB6484;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.btn {
+  border: 1px solid #EB89B5;
+  color: #D17AA1;
+  border-radius: 5px;
+  padding:10px 20px;
+  font-size: 17px;
+  margin-top:20px;
+  cursor: pointer;
+}

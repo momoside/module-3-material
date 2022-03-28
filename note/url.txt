@@ -1,0 +1,2 @@
+REST API data sample: https://gorest.co.in/
+react lifecycle: https://miro.medium.com/proxy/0*2Y__6_3e2eiN8h6A
