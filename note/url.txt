@@ -1,3 +1,5 @@
 REST API data sample: https://gorest.co.in/
 react lifecycle: https://miro.medium.com/proxy/0*2Y__6_3e2eiN8h6A
 repo: https://github.com/momoside/module-3-material
+sandbox previous example repo (module 3 - session 1): https://codesandbox.io/s/ancient-architecture-fd8s4b?file=/src/pages/cart.js:0-1407
+react hooks lifecycle: https://raw.githubusercontent.com/donavon/hook-flow/master/hook-flow.png
