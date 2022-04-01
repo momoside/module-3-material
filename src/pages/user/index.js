@@ -28,6 +28,27 @@ export default function UserPage() {
     fetch();
   }, []); //only first render
 
+  const [user, setUser] = useState({
+    name: "",
+    email: "",
+    gender: "",
+    status: "",
+  });
+
+  const handleOnChange = (e) => {
+    const { name, value } = e.target;
+
+    // setUser({...user, [name]: value });
+
+    setUser((prevUser) => ({ ...prevUser, [name]: value }));
+    // console.log("user", user);
+  };
+
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+    console.log("user", user);
+  };
+
   return (
     <div className="container">
       <div className="users__box">
@@ -50,9 +71,12 @@ export default function UserPage() {
           </div>
         </div>
         <div className="users__box--right">
-          {/* <EmptyStateComponent /> */}
-          <UserInfoComponent />
-          <UserFormComponent />
+          <UserInfoComponent {...user} />
+          <UserFormComponent
+            user={user}
+            handleOnChange={handleOnChange}
+            handleOnSubmit={handleOnSubmit}
+          />
         </div>
       </div>
     </div>
